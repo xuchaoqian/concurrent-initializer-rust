@@ -1,11 +1,20 @@
 [package]
 name = "concurrent-initializer"
-version = "0.5.0"
+version = "0.5.1"
+description = "A rust library of concurrent initializer to ensure initialization only once per key."
+authors = ["Chaoqian Xu <chaoranxu@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/xuchaoqian/concurrent-initializer-rust"
+keywords = ["data-structures"]
+exclude = [".vscode", "target", "Cargo.lock"]
 edition = "2021"
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+rust-version = "1.75"
+
 [dependencies]
 crossbeam-epoch = { version = "0.9.9" }
 num_cpus = "1.13"
 parking_lot = "0.12"
+
 [dev-dependencies]
 assert_matches = "1.5"
